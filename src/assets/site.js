@@ -53,14 +53,18 @@ for (var j = 0; j < items.length; j++) {
 
 function toggleSibling() {
   var stepSibling = this.parentNode.getElementsByClassName('toggle-target')[0];
+  var sibling = this.parentNode.getElementsByClassName('toggle-sibling')[0];
   var icon = this.getElementsByClassName('icon')[0];
   var klass = 'display-none';
+  var red = 'ppn__menu-item-red';
   if (stepSibling.classList.contains(klass)) {
     stepSibling.classList.remove(klass);
     icon.innerHTML = '▾';
+    sibling.classList.add(red);
   } else {
     stepSibling.classList.add(klass);
     icon.innerHTML = '▸';
+    sibling.classList.remove(red);
   }
 }
 
