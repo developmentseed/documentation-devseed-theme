@@ -1,0 +1,28 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:6.10
+
+
+    working_directory: ~/project
+    steps:
+      - checkout
+
+      - run:
+          name: Install
+          command: |
+            npm install
+
+      - run:
+          name: build
+          command: npm run build
+
+      - run:
+          name: Deploy
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
+              npm publish
+            fi
+
