@@ -23,6 +23,6 @@ jobs:
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
               echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ~/.npmrc
-              npm publish
+              npm publish || echo 'npm publishing failed'
             fi
 
