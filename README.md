@@ -2,6 +2,8 @@
 
 This is a theme for [documentationjs](https://github.com/documentationjs/documentation).
 
+![screenshot](screenshot.png)
+
 ### Usage
 
 ```
