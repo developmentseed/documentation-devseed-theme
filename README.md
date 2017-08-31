@@ -1,8 +1,12 @@
 ## Devseed Theme for documentation.js
 
+[![CircleCI](https://circleci.com/gh/developmentseed/documentation-devseed-theme.svg?style=svg)](https://circleci.com/gh/developmentseed/documentation-devseed-theme)
+
 This is a theme for [documentationjs](https://github.com/documentationjs/documentation).
 
 ![screenshot](screenshot.png)
+
+Live version: https://devseed.com/kes
 
 ### Usage
 

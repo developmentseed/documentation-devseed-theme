@@ -1,5 +1,5 @@
 {
-  "name": "documentationjs-devseed-theme",
+  "name": "documentation-devseed-theme",
   "version": "0.1.0",
   "description": "Devseed Theme for documentation.js",
   "main": "lib/index.js",
