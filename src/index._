@@ -19,7 +19,7 @@
           <p class='mb1 page__subtitle'><code><%- config['project-version'] %></code></p>
         </div>
 
-        <a href="#prime-nav" title="Show/hide menu" class="menu-toggle"><span>Browse</span></a>
+        <a id="menu-toggle" href="#prime-nav" title="Show/hide menu" class="menu-toggle"><span>Browse</span></a>
         
         <nav class="page__prime-nav" id="prime-nav">
           <input placeholder='Filter' id='filter-input' class='col12 block input' type='text' />
@@ -127,5 +127,6 @@
   <script src='assets/anchor.js'></script>
   <script src='assets/split.js'></script>
   <script src='assets/site.js'></script>
+  <script src='assets/nav.js'></script>
 </body>
 </html>

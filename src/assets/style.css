@@ -101,7 +101,6 @@ body {
 }
 
 #toc {
-  overflow-y: scroll;
   flex-grow: 1;
 }
 
@@ -151,6 +150,10 @@ body {
 
   .gutter-horizontal {
     display: block;
+  }
+
+  #toc {
+    overflow-y: scroll;
   }
 }
 
