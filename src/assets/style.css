@@ -102,6 +102,7 @@ body {
 
 #toc {
   flex-grow: 1;
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -153,7 +154,7 @@ body {
   }
 
   #toc {
-    overflow-y: scroll;
+    overflow-y: auto;
   }
 }
 
