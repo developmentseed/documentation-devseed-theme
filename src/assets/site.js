@@ -137,7 +137,7 @@ Split(['#split-left', '#split-right'], {
       'flex-basis': gutterSize + 'px'
     };
   },
-  gutterSize: 20,
+  gutterSize: 32,
   sizes: [percent_left, 100 - percent_left]
 });
 

@@ -62,11 +62,11 @@ body {
   width: 1rem;
   height: 1rem;
   background: linear-gradient(
-    to bottom, 
-    #fff, #fff 20%, 
-    transparent 20%, transparent 40%, 
-    #fff 40%, #fff 60%, 
-    transparent 60%, transparent 80%, 
+    to bottom,
+    #fff, #fff 20%,
+    transparent 20%, transparent 40%,
+    #fff 40%, #fff 60%,
+    transparent 60%, transparent 80%,
     #fff 80%, #fff 100%
   );
 }
@@ -88,7 +88,7 @@ body {
 
 .page__body {
   flex-grow: 1;
-  padding: 1rem 0;
+  padding: 1rem;
 }
 
 .page__footer {
@@ -112,7 +112,7 @@ body {
   }
 
   .page__header {
-    flex: 0 0 auto;
+    position: fixed;
     height: 100vh;
     width: 20rem;
   }
@@ -135,8 +135,7 @@ body {
   }
 
   .page__body {
-    flex: 0 0 auto;
-    height: caalc(100vh - 2rem);
+    margin-left: 20rem;
   }
 
   .page__footer {
