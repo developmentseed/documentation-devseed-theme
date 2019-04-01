@@ -7,12 +7,11 @@
   <link href='assets/bass.css' type='text/css' rel='stylesheet' />
   <link href='assets/style.css' type='text/css' rel='stylesheet' />
   <link href='assets/github.css' type='text/css' rel='stylesheet' />
-  <link href='assets/split.css' type='text/css' rel='stylesheet' />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i" />
 </head>
 <body class='documentation m0'>
   <div class='page flex'>
-    <header id='split-left' class='page__header fs0'>
+    <header class='page__header'>
       <div class='inner'>
         <div class="page__headline">
           <h1 class='mb0 no-anchor page__title'><%- config['project-name'] %></h1>
@@ -20,7 +19,7 @@
         </div>
 
         <a id="menu-toggle" href="#prime-nav" title="Show/hide menu" class="menu-toggle"><span>Browse</span></a>
-        
+
         <nav class="page__prime-nav" id="prime-nav">
           <input placeholder='Filter' id='filter-input' class='col12 block input' type='text' />
 
@@ -99,7 +98,7 @@
       </nav>
     </header>
 
-    <main id='split-right' class='page__body relative overflow-auto'>
+    <main class='page__body'>
       <% docs.forEach(function(s) { %>
         <% if (s.kind !== 'note') { %>
           <%= renderSection({
@@ -121,7 +120,7 @@
         </p>
       </div>
     </footer>
-      
+
   </div>
 
   <script src='assets/anchor.js'></script>
