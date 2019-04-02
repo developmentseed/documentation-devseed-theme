@@ -104,6 +104,8 @@ module.exports = function(
     sharedImports
   );
 
+  config.year = new Date().getFullYear();
+
   // push assets into the pipeline as well.
   return new Promise(resolve => {
     vfs.src([__dirname + '/assets/**'], { base: __dirname }).pipe(

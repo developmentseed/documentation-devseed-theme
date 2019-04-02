@@ -116,7 +116,7 @@
       <div class="inner">
         <p>
           <a href="https://developmentseed.org" title="Visit Development Seed website"><img src="assets/images/devseed-logo-symbol.svg" alt="Development Seed logo symbol" width="512" height="152"> <span>Development Seed</span></a>
-          <small>2017</small>
+          <small><%= config['year'] %></small>
         </p>
       </div>
     </footer>
