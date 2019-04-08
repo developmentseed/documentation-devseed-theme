@@ -35,7 +35,7 @@ body {
 
 .page__header > .inner {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
 }
 
 .page__headline {
@@ -77,11 +77,14 @@ body {
 }
 
 .page__prime-nav {
+  color: #FFF;
   display: none;
-  flex-grow: 1;
-  flex-direction: column;
+  flex-flow: column nowrap;
   padding: 1rem 0 0 0;
-  overflow: auto;
+}
+
+.page__prime-nav a {
+  color: inherit;
 }
 
 .page__prime-nav.show {
@@ -103,11 +106,6 @@ body {
   font-size: .875rem;
   line-height: 1rem;
   font-weight: 400;
-  overflow: hidden;
-}
-
-#toc {
-  flex-grow: 1;
   overflow: hidden;
 }
 
@@ -134,18 +132,16 @@ body {
 
   .page__prime-nav {
     display: flex;
-    max-height: 320rem;
-  }
-
-  .page__prime-nav a {
-    color: inherit;
+    height: 100%;
+    min-height: 0;
   }
 
   .page__nav-contents {
     position: relative;
+    flex: 1;
     display: flex;
     flex-flow: column nowrap;
-    height: 100%;
+    min-height: 0;
   }
 
   .page__nav-contents::after {
@@ -189,9 +185,9 @@ body {
   #toc {
     position: relative;
     z-index: 1;
-    height: 100%;
     overflow: auto;
     padding: 1rem 0;
+    /* height: 100%; */
   }
 }
 
@@ -257,8 +253,8 @@ body {
   line-height: 1.25;
 }
 
-.ppn__menu>li {
-  margin: 0 -2rem;
+.ppn__menu > li {
+  margin: 0;
 }
 
 .ppn__menu-item,
