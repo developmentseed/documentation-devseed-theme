@@ -22,13 +22,18 @@ body {
   min-height: 100vh;
 }
 
+.page__header,
+.page__header * {
+  box-sizing: border-box;
+}
+
 .page__header {
   background: #534e4e;
   color: #fff;
+  padding: 1rem;
 }
 
 .page__header > .inner {
-  padding: 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -76,6 +81,7 @@ body {
   flex-grow: 1;
   flex-direction: column;
   padding: 1rem 0 0 0;
+  overflow: auto;
 }
 
 .page__prime-nav.show {
@@ -115,11 +121,11 @@ body {
     position: fixed;
     height: 100vh;
     width: 20rem;
-    overflow-y: auto;
+    padding: 2rem 2rem 5rem;
   }
 
   .page__header > .inner {
-    padding: 2rem 2rem 6rem;
+    height: 100%;
   }
 
   .page__headline {
@@ -128,6 +134,33 @@ body {
 
   .page__prime-nav {
     display: flex;
+    max-height: 320rem;
+  }
+
+  .page__prime-nav a {
+    color: inherit;
+  }
+
+  .page__nav-contents {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+  }
+
+  .page__nav-contents::after {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom,#534e4e,transparent),linear-gradient(to top,#534e4e,transparent);
+    background-size: 100% 1rem;
+    background-position: center top,center bottom;
+    pointer-events: none;
   }
 
   .menu-toggle {
@@ -136,6 +169,7 @@ body {
 
   .page__body {
     margin-left: 20rem;
+    padding: 2rem;
   }
 
   .page__footer {
@@ -153,7 +187,11 @@ body {
   }
 
   #toc {
-    overflow-y: auto;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    overflow: auto;
+    padding: 1rem 0;
   }
 }
 
