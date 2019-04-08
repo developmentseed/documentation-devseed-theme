@@ -1,6 +1,6 @@
 {
   "name": "documentation-devseed-theme",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Devseed Theme for documentation.js",
   "main": "lib/index.js",
   "scripts": {
