@@ -186,8 +186,14 @@ body {
     position: relative;
     z-index: 1;
     overflow: auto;
-    padding: 1rem 0;
-    /* height: 100%; */
+  }
+
+  #toc::before,
+  #toc::after {
+    display: block;
+    height: 1rem;
+    content: '';
+    background: transparent;
   }
 }
 
