@@ -1,7 +1,7 @@
 {
-  "presets": ["es2015", "stage-0", "flow"],
-  "plugins": ["syntax-async-functions"],
+  "presets": ["@babel/preset-flow", "@babel/preset-react"],
+  "plugins": ["@babel/plugin-proposal-function-bind", "syntax-async-functions"],
   "ignore": [
-      "src/assets/*"
+    "src/assets/*"
   ]
 }
