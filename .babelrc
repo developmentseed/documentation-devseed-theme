@@ -1,6 +1,6 @@
 {
   "presets": ["@babel/preset-flow", "@babel/preset-react"],
-  "plugins": ["@babel/plugin-proposal-function-bind", "syntax-async-functions"],
+  "plugins": ["@babel/plugin-proposal-function-bind"],
   "ignore": [
     "src/assets/*"
   ]
